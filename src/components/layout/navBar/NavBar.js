@@ -3,13 +3,13 @@ import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
   return (
-    <div className='absolute min-h-screen  w-full'>
-      <div className='absolute flex w-full mx-auto justify-center top-0 z-10'>
+    <div className='absolute h-screen w-screen'>
+      <div className='absolute flex  mx-auto justify-center left-0 right-0 top-0 z-10 '>
         <NavLink to='/' className=' hover:scale-[1.2] transition-all ease-in-out '>
           Home
         </NavLink>
       </div>
-      <div className='absolute flex w-full mx-auto justify-center bottom-0 z-10'>
+      <div className='absolute flex  mx-auto justify-center left-0 right-0 bottom-1 z-10'>
         <NavLink to='/contact' className=' hover:scale-[1.2] transition-all ease-in-out '>
           Contact
         </NavLink>
@@ -19,7 +19,7 @@ const NavBar = () => {
           Skills
         </NavLink>
       </div>
-      <div className='absolute flex  justify-end top-[50%] z-10	right-0 rotate-90'>
+      <div className='absolute flex top-[50%] z-10 right-0 rotate-90'>
         <NavLink to='/experience' className=' hover:scale-[1.2] transition-all ease-in-out '>
           Experience
         </NavLink>
